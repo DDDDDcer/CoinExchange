@@ -10,6 +10,11 @@
     </parent>
 
     <artifactId>coin-member</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>member-api</module>
+        <module>member-service</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>

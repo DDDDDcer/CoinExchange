@@ -9,6 +9,13 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
+    <dependencies>
+        <dependency>
+            <groupId>Uestc.DDc</groupId>
+            <artifactId>chan-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
     <artifactId>chan-service</artifactId>
 
     <properties>

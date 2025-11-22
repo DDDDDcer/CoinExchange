@@ -5,19 +5,18 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>Uestc.DDc</groupId>
-        <artifactId>CoinExchange</artifactId>
+        <artifactId>coin-member</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../../pom.xml</relativePath>
     </parent>
 
     <dependencies>
         <dependency>
             <groupId>Uestc.DDc</groupId>
-            <artifactId>match-api</artifactId>
+            <artifactId>member-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
-    <artifactId>match-service</artifactId>
+    <artifactId>member-service</artifactId>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>

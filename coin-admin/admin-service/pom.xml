@@ -10,6 +10,14 @@
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
+
+    <dependencies>
+        <dependency>
+            <groupId>Uestc.DDc</groupId>
+            <artifactId>admin-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
     <artifactId>admin-service</artifactId>
 
     <properties>
