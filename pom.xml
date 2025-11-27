@@ -4,19 +4,6 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <repositories>
-        <repository>
-            <id>aliyun</id>
-            <name>Aliyun Repository</name>
-            <url>https://maven.aliyun.com/repository/central</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
 
     <groupId>Uestc.DDc</groupId>
     <artifactId>CoinExchange</artifactId>
@@ -42,9 +29,10 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.1.4</version>
+        <version>4.0.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -61,30 +49,35 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-bom</artifactId>
+                <version>${springdoc.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
     <properties>
-        <com.alibaba.cloud.version>2025.0.0.0</com.alibaba.cloud.version>
-        <spring-cloud.version>2022.0.4</spring-cloud.version>
-        <mysql-connector-j.version>9.0.0</mysql-connector-j.version>
         <java.version>21</java.version>
-        <mybatis-plus.version>3.5.3</mybatis-plus.version>
+        <spring-boot.version>4.0.0</spring-boot.version>
+        <spring-cloud.version>2025.1.0</spring-cloud.version>
+        <com.alibaba.cloud.version>2025.0.0.0</com.alibaba.cloud.version>
+
+        <springdoc.version>3.0.0</springdoc.version>
+        <mysql-connector-j.version>9.2.0</mysql-connector-j.version>
+        <druid-boot-starter.version>2.2.2</druid-boot-starter.version>
+        <mybatis-plus.version>3.5.9</mybatis-plus.version>
         <jetcache-starter-redis.version>2.7.5</jetcache-starter-redis.version>
-        <redisson-spring-boot-starter.version>3.27.2</redisson-spring-boot-starter.version>
-        <druid-boot-starter.version>2.2.0</druid-boot-starter.version>
-        <googleauth.version>0.5.0</googleauth.version>
-        <swagger.annotations.version>1.5.21</swagger.annotations.version>
-        <commons-beanutils.version>1.9.4</commons-beanutils.version>
-        <org.mapstruct.version>1.5.2.Final</org.mapstruct.version>
-        <disruptor.version>3.4.4</disruptor.version>
-        <net.sf.supercsv.version>2.4.0</net.sf.supercsv.version>
-        <springside-utils.version>5.0.0-RC1</springside-utils.version>
-        <aliyun-sdk-oss.version>3.1.0</aliyun-sdk-oss.version>
-        <aliyun-java-sdk-core.version>4.0.3</aliyun-java-sdk-core.version>
-        <aliyun-java-sdk-dm.version>3.3.1</aliyun-java-sdk-dm.version>
-        <joda-time.version>2.10</joda-time.version>
-        <okhttp.version>4.9.0</okhttp.version>
-        <okio.version>1.15.0</okio.version>
+        <redisson-spring-boot-starter.version>3.36.0</redisson-spring-boot-starter.version>
+
+        <org.mapstruct.version>1.6.2</org.mapstruct.version>
+        <disruptor.version>4.0.0</disruptor.version>
+        <okhttp.version>4.12.0</okhttp.version>
+        <aliyun-sdk-oss.version>3.18.2</aliyun-sdk-oss.version>
+        <aliyun-java-sdk-core.version>4.6.5</aliyun-java-sdk-core.version>
+        <joda-time.version>2.12.7</joda-time.version>
+
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
